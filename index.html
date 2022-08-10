@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Annabel</title> 
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+  <script src='./resources/JS/script.js' defer></script>
+  <script src="https://kit.fontawesome.com/9f3c928de2.js" crossorigin="anonymous"></script>
+  <!--fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+ 
+<body> 
+  <!-- HEADER -->
+  <header>
+    <h1 id="name">Annabel</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <!-- MAIN -->
+  <main>  <!-- ABOUT ME -->
+    <section id="about">
+      <div id="portraitdiv">
+      <img src="resources\css\Annabel.jpg" alt="A photo of Annabel" id="portrait">  
+      </div>
+      <div class="aboutContainer">
+        <h2>About Me</h2> <!--motivation, competences, -->
+        <p>
+          Hi! My name is Annabel Kooistra, and I'm an aspiring Web Developer. <br>
+          I started coding to self-educate and to explore the options of a careerswitch.
+          Currently, I've almost completed the <a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path" 
+          target="_blank">Front-End Engineer career path</a> on Codecademy, to be 
+          followed by the <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" 
+          target="_blank"> Full-Stack Engineer path</a>. <br>
+          What I like most about coding is that it it combines logical thinking with problem solving and 
+          creativity. And there's so much to discover, that I can literally keep learning my entire life!         
+        </p><br>
+        <p> <!--personal traits -->
+          I'm  a quiet yet enthousiastic person, intelligent and curious by nature. In my last job, I used to be a 
+          salesperson, practising my communicative and problem-solving skills on a daily basis, while genuinely enjoying 
+          being of service to my customers. 
+          A large part of my job entailed being a mentor and coach to my colleagues. I also gave workshops and 
+          trainings, lifting their  and my own communicative skills to a higher level. Since I have a great 
+          affinity and lots of experience with retail and customer service, I'm intrigued by websites or webshops that strive to
+          offer the best customer experience possible.
+        </p><br>
+        <div id="readMoreText"> <!-- hobbies-->
+          In my freetime I like to enjoy the outdoors, or be creative in any way. I like to start my day with 
+          <div class="aboutBOX">
+            <span class="aboutBTN">yoga</span>.
+            <span class="aboutTXT">No, not because I wanna be a 'yoga-girl'! It's more practical: it really benefits 
+              my health. When I start my day with yoga, I notice that I'm more relaxed and more focused during
+              the day. And it's a nice counterpart to sitting behind a laptop a lot...</span>
+            </div>  
+          I'm creative and curious, always interested in how things are made. The result is that I'm collecting 
+          <div class="aboutBOX">
+            <span class="aboutBTN">hobbies</span>.
+            <span class="aboutTXT">Yes, before i discovered coding I had tons of other hobbies! Ranging from 
+              exploring ancient handicraft-techniques (like tablet-weaving or nalbinding), to making my own clothes, 
+              or my own wine, or growing vegetables (especially the ones totally unsuitable for this climate).
+              I also love repairing stuff like camping-equipment, my bike or the coffeemachine.</span>
+          </div>Some hobbies turned out to be very useful for web development! For instance, painting gave me a deep understanding
+             of color-theory, while practicing calligraphy taught me a lot about typography and layouts. 
+        </div>
+        <button id="readMoreButton" onclick="showMore()">Read More</button>
+          
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projectContainer">
+          <div class="project">
+            <h3>Don Nayo</h3>
+            <div class="projectContent">
+                <a href="" target="_blank"><img src="resources\css\Schermafbeelding DNsite.png" alt="printscreen of the Don Nayo website"></a>
+                <div class="projectText">
+                    <h4> Description:</h4>
+                    <p> Don Nayo is an awesome project that aims to built an app to connect farmers in Guatemala to buyers. 
+                        I built this site as a landingpage for a friend, in order for her to find funds to built the app! 
+                        Also, we're currently working on wire-frames and prototypes for the app itself. 
+                    </p>
+                    <h4>Languages used: </h4>
+                    <p>HTML, CSS and JavaScript</p>
+                    <h4>What I learned from this project:</h4>
+                    <p> To create a responsive website, and how to create a carrousel.</p>
+                </div>
+            </div>
+          </div>
+          <div class="project">
+            <h3>Memory</h3>
+            <div class="projectContent">
+                <a href="https://github.com/Tanaraq/MyMemory" target="_blank"><img src="resources\css\Screenshot MyMemory.png" alt=""></a>
+                <div class="projectText">
+                    <h4> Description:</h4>
+                    <p>Programming silly games is a great way to hone your programming skills! Here's one of mine. 
+                        Since I like to travel a lot, I made a Memory game with my own pictures. I want to add the 
+                        possibilities to choose your own difficulty, and to upload your own pictures.</p>
+                    <h4>Languages used: </h4>
+                    <p>HTML, CSS and lots of JavaScript</p>
+                    <h4>What I learned from this project:</h4>
+                    <p> To create elements in JavaScript and push them a CSS grid, nice practice to write JavaScript functions and loops.</p>
+                    
+                </div>
+            </div>
+            
+          </div>
+          <div class="project">
+            <h3>Fractal Fun</h3>
+            <div class="projectContent">
+                <a href="https://github.com/Tanaraq/Fractal-Fun" target="_blank"><img src="resources\css\Screenshot_FractalFun.png" alt=""></a>
+                <div class="projectText">
+                    <h4> Description:</h4>
+                    <p> I've alway loved Fractals. Being able to write a program that draws them makes me happy 
+                        and proud! I added a little menu where you can manually adjust the fractals parameters. 
+                    </p>
+                    <h4>Languages used: </h4>
+                    <p>HTML, CSS and lots of JavaScript</p>
+                    <h4>What I learned from this project:</h4>
+                    <p>The basics of canvas, writing functions with lots of variables that can be randomized or 
+                        manually adjusted, creating HTML forms with corresponding eventListeners and eventHandlers</p>
+                </div>
+            </div>
+            
+          </div>
+          <div class="project">
+            <h3>Sticky Notes</h3>
+            <div class="projectContent">
+                <a href="https://github.com/Tanaraq/StickyNotes" target="_blank"><img src="resources/css/screenshot StickyNotes.png" alt=""></a>
+                <div class="projectText">
+                    <h4> Description:</h4>
+                    <p>My head can be chaotic at times... so I created a messageboard with sticky-notes. Now I can write 
+                        short reminders for myself.
+                    </p>
+                    <h4>Languages used: </h4>
+                    <p>HTML, CSS and JavaScript</p>
+                    <h4>What I learned from this project:</h4>
+                    <p> More skeuomorphic styling in CSS, using transform & transition, and how to extract and save the 
+                        data from the stickies.</p>
+                    
+                </div>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skillsContainer">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p class="skill-name">HTML 5</p>
+          <p class="level">Proficient</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p class="skill-name">CSS 3</p>
+          <p class="level">Proficient</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <p class="skill-name">JavaScript</p>
+          <p class="level">Intermediate</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <p class="skill-name">React</p>
+          <p class="level">Novice</p>
+        </div>
+        <div class="skill">        
+          <i class="fab fa-git"></i>
+          <p class="skill-name">Git</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-github"></i>
+          <p class="skill-name">GitHub</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-npm"></i>
+          <p class="skill-name">NPM</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-node"></i>
+          <p class="skill-name">Node</p>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <p>Made by A. Kooistra, Breda, 2022</p>
+  </footer>
+  <script src="resources/JS/script.js"></script>
+</body>
+</html>
+
