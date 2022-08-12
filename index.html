@@ -11,18 +11,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
 </head>
  
-<body> 
+<body id="body"> 
   <!-- HEADER -->
   <header>
+    <div id="mode">
+      <button onclick="dark()">darkmode</button>
+      <button onclick="business()">business</button>
+      <button onclick="colorful()">colorful</button>
+    </div>
+    </div>
+    <div id="original-header">
     <h1 id="name">Annabel</h1>
     <nav>
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </div>
   </header>
   
   <!-- MAIN -->
@@ -77,8 +85,10 @@
         <button id="readMoreButton" onclick="showMore()">Read More</button>   
       </div>
     </section>
+
     <!-- PROJECTS -->
     <section id="projects">
+      <h2>Projects</h2>
       
       <div class="project">
         <h3>Fotomatic</h3>

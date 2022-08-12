@@ -1,3 +1,10 @@
+/* My color-palette: 
+  dark= #0E4C5E
+  medium= #5D939E
+  light= #C6D7DA
+  orange= #C25B07
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,8 +23,7 @@ body {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background-color: #5D939E;
-  background-image: linear-gradient( to right, #5D939E, yellow, #c25b07 );
+  background-color: #C6D7DA;
 } 
 
 p {
@@ -31,7 +37,7 @@ h1, h2, h3, li {
 }
 
 h1 {
-  padding: 12px;
+  padding: 10px;
   padding-left: 24px;
 }
   
@@ -48,20 +54,24 @@ h4 {
 /* HEADER */
 header {
   position: sticky;
-  top: -40px;
-  height: 100px;
+  top: -50px;
+  height: 115px;
   width: 90%;
   max-width: 1000px;  
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;  
   background-color:#0E4C5E;
-  color: #fff;
+  color: #FFF;
   box-shadow: 0px 5px 15px #757575;
   z-index: 5;
   border-radius: 4px;
 }
-
+#original-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+}
 /* NAV */
 
 nav {
@@ -89,8 +99,43 @@ a {
 
 a:hover {
   font-weight: 700;
-  color: #c25b07;
+  color: #C25B07;
   text-shadow: 0 0 orange;
+}
+
+#mode {
+  align-self: flex-end;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 207px;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #CCC;
+  box-shadow: 2px 2px 6px black;
+}
+
+#mode button {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  width: 70px;
+  color:#0E4C5E;
+  background-color: transparent;
+  border: none;  
+  padding: 5px 0px;
+  border-right: 1px solid grey;
+}
+
+#mode button:hover {
+  background-color: #FFF;
+}
+
+#mode button:active {
+  background-color: #FFF;
+  font-weight: 500;
 }
 
 /* MAIN */
@@ -118,6 +163,7 @@ section {
   max-height: 450px;
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: inherit;
 }
 
 #portraitdiv {
@@ -141,27 +187,27 @@ section {
   transform: translateX(-50%);
 }
 .aboutContainer a {
-  color: #0E4C5E;
+  color: #5D939E;
   font-weight: 700;
 }
 #readMoreButton {
   float: right;
   font-weight: 700;
   color: #0E4C5E;
-  background-color: #fff;
+  background-color: #FFF;
   border: 1px solid #0E4C5E;
   border-radius: 3px;
   box-shadow: 2px 2px 5px #757575;  
   padding: 0.5em;
 }
 #readMoreButton:hover {
-  color: #fff;
-  background-color: #c25b07;
+  color: #FFF;
+  background-color: #C25B07;
 }
 #readMoreButton:active {
   top: 4px;
-  color: #c25b07;
-  background-color: #fff;
+  color: #C25B07;
+  background-color: #FFF;
 }
 
 #readMoreText {
@@ -173,6 +219,7 @@ section {
 } 
 
 .aboutBTN {
+  color: #5D939E;
   font-weight: 700;
 }
 .aboutBOX {
@@ -184,8 +231,8 @@ section {
   height: 0px;
   width: 50%;
   right: 12%;
-  background-color: #aecdd3;
-  border:1px solid #c25b07;
+  background-color: #C6D7DA;
+  border:1px solid #C25B07;
   border-radius: 4px;
   padding: 0.5em;
   opacity: 0;
@@ -211,10 +258,11 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   border-bottom: 1px solid #0E4C5E;
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 5px;
   opacity: 0.9;
   transform-style: preserve-3d;
   transition: all 400ms ease;
@@ -229,7 +277,7 @@ section {
 }
 
 .project:last-child {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #FFF;
 }
     
 .projectContent {
@@ -283,9 +331,9 @@ section {
   text-decoration: none;
 }
   
-a:hover {
+#links a:hover {
   font-weight: 700;
-  color: #c25b07;
+  color: #C25B07;
   text-shadow: 0 0 orange;
 }
 
