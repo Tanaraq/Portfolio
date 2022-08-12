@@ -57,7 +57,7 @@ header {
   align-items: flex-end;
   background-color:#0E4C5E;
   color: #fff;
-  box-shadow: 0px 5px 15px #808080;
+  box-shadow: 0px 5px 15px #757575;
   z-index: 5;
   border-radius: 4px;
 }
@@ -106,7 +106,7 @@ section {
   background-color:#fff;
   border: 1px solid #0E4C5E;
   border-radius: 4px;
-  box-shadow: 0px 5px 15px #5D939E;  
+  box-shadow: 0px 5px 15px #757575;  
   margin: 15px auto;
   padding: 10px;
 }
@@ -125,7 +125,7 @@ section {
   height: 250px;
   overflow: hidden;
   border: 1px solid #0E4C5E;
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: 3px 3px 5px #757575;
   border-radius: 50%;
   margin: 1em;
   margin-top: 2em;
@@ -144,44 +144,33 @@ section {
   color: #0E4C5E;
   font-weight: 700;
 }
-#readMoreButton1, #readMoreButton2 {
+#readMoreButton {
   float: right;
   font-weight: 700;
   color: #0E4C5E;
   background-color: #fff;
   border: 1px solid #0E4C5E;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px #5D939E;  
+  box-shadow: 2px 2px 5px #757575;  
   padding: 0.5em;
 }
-#readMoreButton1:hover, #readMoreButton2:hover {
+#readMoreButton:hover {
   color: #fff;
   background-color: #c25b07;
 }
-#readMoreButton1:active, #readMoreButton2:active {
+#readMoreButton:active {
   top: 4px;
   color: #c25b07;
   background-color: #fff;
 }
 
-#readMoreText1 {
+#readMoreText {
   height: 0; 
   font-family: 'Times New Roman', Times, serif;
   overflow: hidden;
   padding-top: 0.5em;
   transition: all 3s ease 100ms;
 } 
-
-#readMoreButton2 {
-  display: none;
-} 
-
-#readMoreText2 {
-  height: auto; 
-  font-family: 'Times New Roman', Times, serif;
-  overflow: hidden;
-  transition: all 3s ease 100ms;
-}
 
 .aboutBTN {
   font-weight: 700;
@@ -235,7 +224,7 @@ section {
   left: -3px;
   opacity: 1;
   border: 1px solid #0E4C5E;
-  box-shadow: 2px 2px 5px #5D939E;
+  box-shadow: 2px 2px 10px #757575;
   z-index: 3;
 }
 
@@ -255,7 +244,7 @@ section {
   margin-bottom: 2em;  
   border: 1px solid #5D939E;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: 3px 3px 5px #757575;
 }
 
 .projectText {
@@ -305,7 +294,6 @@ footer {
   padding: 1em;
   text-align: center;
   color:#0E4C5E;
-  border-top: 1px solid #5D939E;
 }
 
 /* MEDIA QUERIES */
