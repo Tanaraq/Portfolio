@@ -15,19 +15,19 @@
   <!-- HEADER -->
   <header>
     <div id="mode">
-      <button onclick="dark()">darkmode</button>
-      <button onclick="business()">business</button>
-      <button onclick="colorful()">colorful</button>
+      <button onclick="dark()" id="btn1">darkmode</button>
+      <button onclick="business()" id="btn2">business</button>
+      <button onclick="colorful()" id="btn3">colorful</button>
     </div>
     </div>
     <div id="original-header">
     <h1 id="name">Annabel</h1>
     <nav>
       <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about" onclick="notContact()">About</a></li>
+        <li><a href="#projects" onclick="notContact()">Projects</a></li>
+        <li><a href="#skills" onclick="notContact()">Skills</a></li>
+        <li><a href="#contact" onclick="getContact()">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -68,9 +68,9 @@
           In my freetime I like to enjoy the outdoors, or be creative in any way. I like to start my day with 
           <div class="aboutBOX">
             <span class="aboutBTN">yoga</span>.
-            <span class="aboutTXT">No, not because I wanna be a 'yoga-girl'! It's more practical: it benefits 
-              me. When I start my day with yoga, I notice that I'm more relaxed and more focused during
-              the day. And it's a nice counterpart to sitting behind a laptop all day...</span>
+            <span class="aboutTXT">No, not because I wanna be a 'yoga-girl'!<br>It's more practical: when I start 
+              my day with yoga, I notice that I'm more relaxed and more focused during
+              the day. And it's a nice counterpart to sitting behind a laptop a lot...</span>
             </div>  
           I'm creative and curious, always interested in how things are made. The result is that I'm collecting 
           <div class="aboutBOX">
@@ -82,7 +82,7 @@
           </div>Some hobbies turned out to be very useful for web development! For instance, painting gave me a deep understanding
              of color-theory, while practicing calligraphy taught me a lot about typography and layouts. 
         </div>
-        <button id="readMoreButton" onclick="showMore()">Read More</button>   
+        <button id="readMoreButton" onclick="showMore()">Read More</button>
       </div>
     </section>
 
@@ -208,7 +208,8 @@
           <p class="skill-name">Git</p>
         </div>
         <div class="skill">
-          <i class="fab fa-github"></i>
+          <a href="https://github.com/Tanaraq" target="_blank" class="skill link">
+            <i class="fab fa-github"></i></a>
           <p class="skill-name">GitHub</p>
         </div>
         <div class="skill">
@@ -221,6 +222,42 @@
         </div>        
       </div>
     </section>
+    
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you want to contact me about a project, or have any questions about my work, please send me an e-mail:</p>
+      <div id="skillsContainer">
+        <div class="skill">
+          <a href="mailto:annabelkooistra@outlook.com" class="skill link">
+            <i class="fas fa-envelope-square icon"></i></a>
+          <p class="skill-name">e-mail</p>
+        </div>
+      </div>
+      <br>
+      <h3>Links:</h3>
+      <div id="skillsContainer">
+        <div class="skill">
+          <a href="https://github.com/Tanaraq" target="_blank" class="skill link">
+            <i class="fab fa-github"></i></a>
+          <p class="skill-name">GitHub</p>
+        </div>
+        <div class="skill">
+          <a href="https://nl.linkedin.com/in/annabel-kooistra-huisman-7a5a28a1" target="_blank" class="skill link"><i class="fab fa-linkedin icon"></i></a>
+          <p class="skill-name">LinkedIn</p>
+        </div>
+        <div class="skill">
+          <a href="https://www.instagram.com/annabelkooistra/" target="_blank" class="skill link"><i class="fa-brands fa-instagram"></i></a> <!--add instagram!-->
+          <p class="skill-name">Instagram</p>
+        </div>
+        <div class="aboutBOX skill">
+          <i class="fa-regular fa-file-lines"></i>
+          <p class="aboutTXT">Interested in my Curriculum Vitae? Send me an e-mail with the reason why, so I can send you a copy.</p>      
+          <p class="skill-name">C.V.</p>
+        </div>
+      </div>      
+    </section>
+
   </main>
 
   <!-- FOOTER -->

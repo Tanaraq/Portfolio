@@ -1,9 +1,4 @@
-const background = document.getElementById("body");
-const mode = document.getElementById("mode");
-const header = document.querySelector('header');
-const about = document.getElementById("about");
-const projects = document.getElementById("projects");
-const skills = document.getElementById("skills");
+/* READ MORE */
 const readButton = document.getElementById('readMoreButton');
 
 function showMore() {  
@@ -21,53 +16,79 @@ function showMore() {
   }
 }
 
-/* MODES '#0E4C5E', #5D939E */
+/* MODES */
+const background = document.getElementById("body");
+const header = document.querySelector('header');
+const section = Array.from(document.getElementsByTagName('section'));
+const links = Array.from(document.getElementsByClassName('link'));
+
+
+/* My color-palette: 
+    dark: #042E3A
+    MAIN = #0E4C5E
+    medium= #5D939E
+    light= #C6D7DA
+    orange= #C25B07
+*/
 function dark() {
-  background.backgroundImage= 'none';
+  background.style.backgroundImage= 'none';
   background.style.backgroundColor= '#0E4C5E';
-  mode.style.backgroundColor= '#222';
   header.style.backgroundColor= '#042E3A';
   header.style.color= '#FFF';
-  about.style.backgroundColor= '#042E3A';
-  about.style.color= '#FFF';
-  projects.style.backgroundColor= '#042E3A';
-  projects.style.color= '#FFF';
-  skills.style.backgroundColor= '#042E3A';
-  skills.style.color= '#FFF';
   readButton.style.color= '#FFF';
   readButton.style.backgroundColor= '#0E4C5E';
   readButton.style.border= '1px solid #FFF';
+  section.forEach(element => {
+    element.style.backgroundColor= '#042E3A';
+    element.style.color= '#FFF';
+  });
+  links.forEach(link => {
+    link.style.color= "#FFF";
+  });  
 }
 
 function business() {
-  background.backgroundImage= 'none';
+  background.style.backgroundImage= 'none';
   background.style.backgroundColor='#C6D7DA';
-  mode.style.backgroundColor= '#C6D7DA';
   header.style.backgroundColor= '#0E4C5E';
   header.style.color= '#FFF';
-  about.style.backgroundColor= '#FFF';
-  about.style.color= '#0E4C5E';
-  projects.style.backgroundColor= '#FFF';
-  projects.style.color= '#0E4C5E';
-  skills.style.backgroundColor= '#FFF';
-  skills.style.color= '#0E4C5E';
+  section.forEach(element => {
+    element.style.backgroundColor= '#FFF';
+    element.style.color= '#0E4C5E';
+  });
   readButton.style.color= '#0E4C5E';
   readButton.style.backgroundColor= '#FFF';
   readButton.style.border= '1px solid #0E4C5E';
+  links.forEach(link => {
+    link.style.color= "#0E4C5E";
+  }); 
 }
 
 function colorful() {
   background.style.backgroundImage= 'linear-gradient( to right, #5D939E, yellow, #c25b07 )';
-  mode.style.backgroundColor= '#DDD';
   header.style.backgroundColor= '#0E4C5E';
   header.style.color= '#FFF';
-  about.style.backgroundColor= '#FFF';
-  about.style.color= '#0E4C5E';
-  projects.style.backgroundColor= '#FFF';
-  projects.style.color= '#0E4C5E';
-  skills.style.backgroundColor= '#FFF';
-  skills.style.color= '#0E4C5E';
+  section.forEach(element => {
+    element.style.backgroundColor= '#FFF';
+    element.style.color= '#0E4C5E';
+  });
   readButton.style.color= '#0E4C5E';
   readButton.style.backgroundColor= '#FFF';
   readButton.style.border= '1px solid #0E4C5E';  
+  links.forEach(link => {
+    link.style.color= "#0E4C5E";
+  }); 
+}
+
+/* CONTACT */
+function getContact(){
+  about.style.display='none';
+  projects.style.display='none';
+  skills.style.display='none';
+}
+function notContact(){
+  about.style.display='flex';
+  projects.style.display='block';
+  skills.style.display='block';
+
 }

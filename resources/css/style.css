@@ -1,10 +1,3 @@
-/* My color-palette: 
-  dark= #0E4C5E
-  medium= #5D939E
-  light= #C6D7DA
-  orange= #C25B07
-*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,11 +17,12 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #C6D7DA;
+  /* background-image: linear-gradient(to right, rgb(93, 147, 158), yellow, rgb(194, 91, 7)); */
 } 
 
 p {
   font-family: 'Times New Roman';
-  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h1, h2, h3, li {
@@ -47,7 +41,9 @@ h2 {
 }
   
 h4 {
-  padding: 5px 0;
+  color: #5D939E;
+  text-decoration: underline;
+  padding: 5px 0px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -92,7 +88,7 @@ nav li:first-child {
   border-left: solid 1px #0E4C5E;
 }
 
-a {
+nav a {
   color: #fff;
   text-decoration: none;
 }
@@ -112,7 +108,7 @@ a:hover {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: #CCC;
+  background-color: #0E4C5E;
   box-shadow: 2px 2px 6px black;
 }
 
@@ -122,7 +118,7 @@ a:hover {
   font-weight: 700;
   text-align: center;
   width: 70px;
-  color:#0E4C5E;
+  color: #FFF;
   background-color: transparent;
   border: none;  
   padding: 5px 0px;
@@ -130,7 +126,8 @@ a:hover {
 }
 
 #mode button:hover {
-  background-color: #FFF;
+  background-color: #C25B07; 
+  color: #FFF; 
 }
 
 #mode button:active {
@@ -152,7 +149,7 @@ section {
   border: 1px solid #0E4C5E;
   border-radius: 4px;
   box-shadow: 0px 5px 15px #757575;  
-  margin: 15px auto;
+  margin: 20px auto;
   padding: 10px;
 }
 
@@ -190,6 +187,10 @@ section {
   color: #5D939E;
   font-weight: 700;
 }
+.aboutContainer a:hover {
+  color: #C25B07;
+}
+
 #readMoreButton {
   float: right;
   font-weight: 700;
@@ -199,10 +200,11 @@ section {
   border-radius: 3px;
   box-shadow: 2px 2px 5px #757575;  
   padding: 0.5em;
+  margin-bottom: 0.5em;
 }
 #readMoreButton:hover {
   color: #FFF;
-  background-color: #C25B07;
+  background-color: #C25B07 !important;
 }
 #readMoreButton:active {
   top: 4px;
@@ -231,8 +233,9 @@ section {
   height: 0px;
   width: 50%;
   right: 12%;
-  background-color: #C6D7DA;
-  border:1px solid #C25B07;
+  color:#FFF;
+  background-color:#C25B07;
+  border:1px solid #0E4C5E;
   border-radius: 4px;
   padding: 0.5em;
   opacity: 0;
@@ -240,7 +243,6 @@ section {
   pointer-events: none;
 }
 .aboutBOX:hover .aboutTXT {
-  
   height: auto;
   opacity: 1;  
 }
@@ -303,7 +305,7 @@ section {
 #skillsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 15px 0px;
   margin-bottom: 20px;
 }
@@ -312,6 +314,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 2em;
 }
 
 .skill i {
@@ -324,17 +327,14 @@ section {
 
 /* CONTACT */
 
-/* LINKS */
-
-#links a {
+.skill a {
   color: #0E4C5E;
   text-decoration: none;
 }
-  
-#links a:hover {
+
+#contact a:hover, .skill a:hover {
   font-weight: 700;
-  color: #C25B07;
-  text-shadow: 0 0 orange;
+  color: #C25B07 !important;
 }
 
 /* FOOTER */
