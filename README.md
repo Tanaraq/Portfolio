@@ -8,6 +8,6 @@ HTML, CSS and JavaScript
 
 ## What I learned from this project:
 
-- to bring it all together
-- to create functional, responsive website
+- to bring those 3 languages together in a single-page website
+- to create a functional, responsive website
 - to be very precise in finishing the details
