@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 I created this site as a personal portfolio-site for a VERY demanding customer: me.
 
