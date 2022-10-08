@@ -284,22 +284,63 @@ section {
     
 .projectContent {
   display: flex;
-}  
+}
+.projectText {
+  padding: 0 10px;    
+}   
 
-.project img {
+.projectImg {
   display: block;
-  width: 200px;
-  max-height: 200px;
+  min-width: 200px;
+  height: 200px;
   overflow: hidden; 
   margin-bottom: 2em;  
   border: 1px solid #5D939E;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #757575;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.projectText {
-  padding: 0 10px;    
-} 
+.img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background: rgba(0,0,0,.44);
+  color: white;
+  text-align: center;
+  transition: top 400ms ease;
+}
+
+.projectImg:hover .img-overlay {
+  top: 0;
+  background: rgba(0,0,0,.6);
+}
+.img-link {
+  text-decoration: none;
+  font-size: 3em;
+  color:#fff;
+}
+
+#Jammming {
+  background-image: url(./Jammming.jpg);
+}
+#Fotomatic {
+  background-image: url(./Fotomatic.png);
+}
+#Memory {
+  background-image: url(./MyMemory.png);
+}
+#FractalFun {
+  background-image: url(./FractalFun.png);
+}
+
 
 /* SKILLS */
 #skillsContainer {
