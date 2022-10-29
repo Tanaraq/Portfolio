@@ -340,7 +340,9 @@ section {
 #FractalFun {
   background-image: url(./FractalFun.png);
 }
-
+#NoteBoard {
+  background-image: url(./screenshot\ StickyNotes.png);
+}
 
 /* SKILLS */
 #skillsContainer {
