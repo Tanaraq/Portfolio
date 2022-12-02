@@ -343,25 +343,31 @@ section {
 #NoteBoard {
   background-image: url(./screenshot\ StickyNotes.png);
 }
+#TodaysDashboard {
+  background-image: url(./Todays_Dashboard.jpg);
+}
 
 /* SKILLS */
 #skillsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 15px 0px;
-  margin-bottom: 20px;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 2em;
+  margin: 1em 2em;
 }
 
 .skill i {
   font-size: 3em;
+}
+
+.skill img {
+  height: 3em;
+  width: auto;
 }
 
 .level {
